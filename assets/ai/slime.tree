@@ -1,0 +1,19 @@
+import idle:"io.github.clentgame.ai.IdleTask"
+import wander:"io.github.clentgame.ai.WanderTask"
+import attack:"io.github.clentgame.ai.AttackTask"
+
+#Conditions
+import isEnemyNearby?:"io.github.clentgame.ai.IsEnemyNearby"
+import canAttack?:"io.github.clentgame.ai.CanAttack"
+
+subtree name:"attack"
+    sequence
+        (isEnemyNearby?) (canAttack?) attack
+        wait seconds:"uniform, 1.2, 2.5"
+
+root
+  selector
+    $attack
+    (random success: 0.25) idle duration:"uniform, 2.0, 3.5"
+    wander
+

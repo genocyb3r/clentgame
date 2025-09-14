@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="32" height="18" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="20">
+ <properties>
+  <property name="music" value="audio/fields.ogg"/>
+ </properties>
+ <tileset firstgid="1" source="floor_tiles.tsx"/>
+ <tileset firstgid="343" source="entities.tsx"/>
+ <layer id="2" name="bg" width="32" height="18">
+  <data encoding="base64" compression="zlib">
+   eJyzZGBgsBzFoxgJ70LCA2H/CjR3DFQ4rBhg+5HjY6TaP9B+H8WjeBQPHLahsfkA1QKFqw==
+  </data>
+ </layer>
+ <layer id="3" name="fgd" width="32" height="18">
+  <data encoding="base64" compression="zlib">
+   eJxrZGBgaBziePsA2cswCPw+3PBID9OlJKpfDsQrgHjlALl3JxDvAuLdA2T/aSA+A8RnB0HcDQfMxIjAA2U/Mj3S/D+YsA0SHq72AwDMmh4b
+  </data>
+ </layer>
+ <objectgroup id="5" name="entities">
+  <object id="2" type="Player" gid="343" x="31.6667" y="261.667" width="48" height="48"/>
+  <object id="3" type="Slime" gid="345" x="153.333" y="214.333" width="32" height="32"/>
+  <object id="4" type="Chest" gid="344" x="273" y="191" width="16" height="16"/>
+  <object id="12" type="Slime" gid="345" x="84" y="65.6667" width="32" height="32"/>
+  <object id="13" type="Slime" gid="345" x="234.667" y="50" width="32" height="32"/>
+  <object id="14" type="Slime" gid="345" x="5.66667" y="169.667" width="32" height="32"/>
+  <object id="15" type="Slime" gid="345" x="331" y="220" width="32" height="32"/>
+  <object id="16" type="Slime" gid="345" x="150.667" y="111.333" width="32" height="32"/>
+  <object id="19" type="Blob" gid="345" x="74" y="229" width="32" height="32">
+   <properties>
+    <property name="color" type="color" value="#ff00007f"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#aa55ff" id="6" name="portals">
+  <object id="17" x="112.5" y="279.75" width="45.25" height="8">
+   <properties>
+    <property name="toMap" value="map2"/>
+    <property name="toPortal" type="int" value="19"/>
+   </properties>
+  </object>
+  <object id="18" x="128.5" y="265" width="13.75" height="11.25"/>
+ </objectgroup>
+</map>

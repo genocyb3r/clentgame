@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="32" height="18" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="21">
+ <properties>
+  <property name="music" value="audio/fields.ogg"/>
+ </properties>
+ <tileset firstgid="1" source="floor_tiles.tsx"/>
+ <tileset firstgid="343" source="entities.tsx"/>
+ <layer id="2" name="bg" width="32" height="18">
+  <data encoding="base64" compression="zlib">
+   eJyzZGBgsBzFoxgJ70LCA2H/CjR3DFQ4rKCT/QxExMdItZ8edhPy/ygexaN4eGIAuCeEiw==
+  </data>
+ </layer>
+ <layer id="3" name="fgd" width="32" height="18">
+  <data encoding="base64" compression="zlib">
+   eJzlk80NgkAQhTchSglqB4oNaKxuizFKBUQsQenJ54GETHZ4OzDqwcN32AzZeT9sDCHEH7IAS1AaZ0OaGftXYA02mbOhpjBBayHOO1CBfeLb1EzTy7Rqek7GmaaXac3JJopMLXqZVq3jT9JrGutYchZn1uEFXEGtzLekY8bY+3hzAy24O2Um/bLsHuAJOqf90u+c7HoOmV1a/xVrlqxLi98cL3Kfp7eUlyPJ0qNLS0+e+7559z/xAlyh93s=
+  </data>
+ </layer>
+ <objectgroup id="5" name="entities">
+  <object id="3" type="Slime" gid="345" x="153.333" y="214.333" width="32" height="32"/>
+  <object id="4" type="Chest" gid="344" x="273" y="191" width="16" height="16"/>
+  <object id="12" type="Slime" gid="345" x="84" y="65.6667" width="32" height="32"/>
+  <object id="13" type="Slime" gid="345" x="234.667" y="50" width="32" height="32"/>
+  <object id="14" type="Slime" gid="345" x="5.66667" y="169.667" width="32" height="32"/>
+  <object id="15" type="Slime" gid="345" x="331" y="220" width="32" height="32"/>
+  <object id="16" type="Slime" gid="345" x="150.667" y="111.333" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup color="#aa55ff" id="6" name="portals">
+  <object id="17" x="116.083" y="0.916667" width="45.25" height="8">
+   <properties>
+    <property name="toMap" value="map"/>
+    <property name="toPortal" type="int" value="18"/>
+   </properties>
+  </object>
+  <object id="19" x="132.091" y="13.2727" width="13.0909" height="9.81818"/>
+ </objectgroup>
+</map>

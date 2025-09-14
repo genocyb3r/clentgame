@@ -1,0 +1,3 @@
+package io.github.clentgame.component
+
+class DisarmComponent
